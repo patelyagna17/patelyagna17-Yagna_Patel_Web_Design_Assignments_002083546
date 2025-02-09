@@ -19,15 +19,15 @@
 			<input type="radio" name="title" id="mrs" value="Mrs" required="required"/>Mrs.
 			<br><br>
 			<label for="firstName">First Name*:</label>
-			<input type="text" name="firstName" id="firstName" placeholder="First Name" required />	
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" required minlength="5" maxlength="30"/>	
 			<br><br>
 			<div id="error_firstName" style="display: none; color: red;">
-				Invalid input for the First Name field. Only text are allowed.
+				Invalid input for the First Name field. Only text are allowed. minlength 5 and maxlength 30
 				<br><br>
 			</div>
 			
 			<label for="lastName">Last Name*:</label>
-			<input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" required minlength="5" maxlength="30"/>
 			<br><br>
 			<div id="error_lastName" style="display: none; color: red;">
 				Invalid input for the Last Name field. Only text are allowed.
@@ -51,19 +51,20 @@
 			</div>
 
 			<label for="Address1">Address 1*:</label>
-			<input type="text" name="Address1" id="Address1" placeholder="address" required/>
+			<input type="text" name="Address1" id="Address1" placeholder="address" required minlength="5" maxlength="30"/>
 			<br><br>
 
 			<label for="Address2">Address 2:</label>
-			<input type="text" name="Address2" id="Address2" placeholder="address" />
+			<input type="text" name="Address2" id="Address2" placeholder="address" maxlength="20" minlength="5" maxlength="30"/>
+			<span id="address2Counter">Character count: 0/20</span>
 			<br><br>
 
 			<label for="city">City*:</label>
-			<input type="text" name="city" id="city" placeholder="city" required/>
+			<input type="text" name="city" id="city" placeholder="city" required minlength="5" maxlength="30"/>
 			<br><br>
 
 			<label for="state">State*:</label>
-			<input type="text" name="state" id="state" placeholder="state" required/>
+			<input type="text" name="state" id="state" placeholder="state" required minlength="5" maxlength="30"/>
 			<br><br> 
 			
             <label for="zipcode">ZipCode*:</label>
@@ -75,9 +76,9 @@
 			</div>
              
             <label for="hear">How did you hear*:</label>
-			<input type='checkbox' name="link" value="facebook" /> Facebook
-            <input type='checkbox' name="link" value="google" /> Google
-            <input type='checkbox' name="link" value="yelp" /> Yelp 
+			<input type="checkbox" name="link" value="facebook" /> Facebook
+            <input type="checkbox" name="link" value="google" /> Google
+            <input type="checkbox" name="link" value="yelp" /> Yelp 
 			<br><br> 
 
 			<label for="drinks">Drinks:*</label>
@@ -103,7 +104,7 @@
                 
 			</div>
 			<div id="text_area" style="display: none" >
-				<textarea class="form-control" type="text" id="xyz" name="text_area" rows="1" cols="25" required>
+				<textarea class="form-control" type="text" id="xyz" name="text_area" rows="1" cols="25"  minlength="5" maxlength="30" required>
                 </textarea>
                 <br /><br />
 			</div>
@@ -137,9 +138,12 @@
 		<th>City</th>
 		<th>State</th>
 		<th>Zipcode</th>
-		<th>Reference</th>
-		<th>Comments</th>
+		 <!-- <th>Reference</th>  -->
+		  <th>Drink</th>
+		
         <th>Drink Description</th>
+		<th>Comments</th>
+		<th>Social Media</th>
 	</tr>
 </table>
 
@@ -147,3 +151,4 @@
 
  </body>
 </html>
+
