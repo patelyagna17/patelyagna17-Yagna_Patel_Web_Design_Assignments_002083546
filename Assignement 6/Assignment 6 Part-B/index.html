@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Stopwatch</h1>
+    <div class="stopwatch">
+      <label for="timeDisplay">Time:</label>
+      <input type="text" id="timeDisplay" value="00:00:00" readonly>
+    </div>
+    <div class="date-picker">
+      <label for="datePicker">Select Date:</label>
+      <input type="date" id="datePicker">
+    </div>
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
