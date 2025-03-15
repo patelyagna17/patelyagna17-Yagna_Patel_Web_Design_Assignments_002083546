@@ -1,0 +1,15 @@
+.hero {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $secondary-color;
+    color: $text-color;
+    padding: 50px;
+}
+
+.hero img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}

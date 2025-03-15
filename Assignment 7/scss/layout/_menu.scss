@@ -1,0 +1,12 @@
+.menu {
+    text-align: center;
+    padding: 30px;
+    @include grid-layout(2);
+}
+
+.menu img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}

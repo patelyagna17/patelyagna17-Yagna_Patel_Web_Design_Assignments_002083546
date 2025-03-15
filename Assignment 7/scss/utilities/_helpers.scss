@@ -1,0 +1,23 @@
+
+@import '../utilities/variables';
+
+// Placeholder for typography styles
+%text-style {
+  font-family: #{$font-stack};
+  color: var(--primary-color);
+  text-align: center;
+}
+
+// Placeholder for common container styles
+%container-style {
+  max-width: 1200px;
+  margin: auto;
+  padding: #{$spacing-unit};
+}
+
+// Loop to generate text color classes dynamically using interpolation
+@each $color in (red, blue, green, yellow) {
+  .text-#{$color} {
+    color: #{$color};
+  }
+}

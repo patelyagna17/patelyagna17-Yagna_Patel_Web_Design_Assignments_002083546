@@ -1,0 +1,28 @@
+
+@import '../utilities/mixins';
+
+// Placeholder for button styles
+%button-base {
+  display: inline-block;
+  padding: #{$spacing-unit} rem(24);
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-container {
+  @include flex-layout(space-around);
+  flex-wrap: wrap;
+  gap: rem(10);
+  padding: #{$spacing-unit};
+}
+
+.button-primary {
+  @extend %button-base;
+  @include button(#{$primary-color});
+}
+
+.button-secondary {
+  @extend %button-base;
+  @include button(#{$secondary-color});
+}

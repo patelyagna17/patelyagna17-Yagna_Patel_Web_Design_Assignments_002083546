@@ -1,0 +1,15 @@
+
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/helpers';
+
+.card-container {
+  @include flex-layout(center);
+  flex-wrap: wrap;
+  gap: #{$spacing-unit};
+}
+
+.card {
+  @extend %card-style;
+  flex: 1 1 300px;
+}
