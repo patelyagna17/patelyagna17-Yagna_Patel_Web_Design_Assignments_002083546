@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Universal rule for images */
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #10041b, #04010900);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Hero Section - Centered Grid Layout */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;  /* centers grid items horizontally */
+  align-items: center;
+  text-align: center;
+  background-color: #d7ccc8;
+  padding: 40px;
+}
+
+/* Override universal image rule for the hero image for a larger display */
+.hero img {
+  width: 400px;
+  height: auto; /* maintains aspect ratio */
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Featured Section - Centered Grid Layout */
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: #efebe9;
+  padding: 40px;
+}
+
+/* Navigation - Flexbox Layout */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #D2691E;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #a0522d;
+}
+
+/* Menu Container - Flexbox Layout */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.menu-item {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  flex: 0 0 18%;
+}
+
+/* Override universal image rule for menu images */
+.menu-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Additional Flexbox Layout */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4e1d2;
+}
+
+.flex-item {
+  background-color: #d2691e;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  margin: 10px;
+}
+
+/* Button Styling */
+.back-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8B4513;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: #a0522d;
+}

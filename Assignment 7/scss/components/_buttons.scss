@@ -1,28 +1,31 @@
+// scss/components/_buttons.scss
+@use '../utilities/_variables' as variables;
+@use '../utilities/_mixins' as mixins;
+@use '../utilities/_functions' as funcs;  // if you have functions like rem()
 
-@import '../utilities/mixins';
-
-// Placeholder for button styles
+// Placeholder for button styles (if needed, define in a helpers file or in this file)
 %button-base {
   display: inline-block;
-  padding: #{$spacing-unit} rem(24);
+  // Use the rem function if defined:
+  padding: variables.$spacing-unit; // or use: funcs.rem(24) if that’s what you need
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
 }
 
 .button-container {
-  @include flex-layout(space-around);
+  @include mixins.flex-layout(space-around);  // Make sure this mixin exists and accepts these parameters
   flex-wrap: wrap;
-  gap: rem(10);
-  padding: #{$spacing-unit};
+  gap: funcs.rem(10);
+  padding: variables.$spacing-unit;
 }
 
 .button-primary {
   @extend %button-base;
-  @include button(#{$primary-color});
+  @include mixins.button(variables.$primary-color);
 }
 
 .button-secondary {
   @extend %button-base;
-  @include button(#{$secondary-color});
+  @include mixins.button(variables.$secondary-color);
 }

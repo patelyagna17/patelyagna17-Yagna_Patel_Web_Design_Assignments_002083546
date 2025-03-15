@@ -1,0 +1,22 @@
+/* _flex.scss */
+
+/* Flex Layout for Header Navigation */
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Flex Layout for Menu Items */
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  

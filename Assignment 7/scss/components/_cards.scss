@@ -1,15 +1,15 @@
-
-@import '../utilities/variables';
-@import '../utilities/mixins';
-@import '../utilities/helpers';
+// scss/components/_cards.scss
+@use '../utilities/_variables' as variables;
+@use '../utilities/_mixins' as mixins;
+@use '../utilities/_helpers' as *; // Bring helpers' members into local scope
 
 .card-container {
-  @include flex-layout(center);
+  @include mixins.flex-layout(center);
   flex-wrap: wrap;
-  gap: #{$spacing-unit};
+  gap: variables.$spacing-unit;
 }
 
 .card {
-  @extend %card-style;
+  @extend %card-style;  // Now %card-style is directly accessible
   flex: 1 1 300px;
 }

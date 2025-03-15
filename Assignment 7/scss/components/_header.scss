@@ -1,0 +1,10 @@
+// scss/components/_header.scss
+@use '../utilities/_variables' as variables;
+
+header {
+  background-color: variables.$primary-color;
+  color: variables.$text-color;
+  font-family: variables.$font-stack;
+  padding: variables.$spacing-unit;
+  // Other header styles...
+}

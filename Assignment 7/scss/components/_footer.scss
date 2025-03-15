@@ -1,0 +1,7 @@
+@use '../utilities/variables' as variables; 
+footer {
+    background-color: variables.$primary-color;
+    color: variables.$text-color;
+    text-align: center;
+    padding: 1rem;
+}

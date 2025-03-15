@@ -1,23 +1,23 @@
+// scss/utilities/_helpers.scss
 
-@import '../utilities/variables';
-
-// Placeholder for typography styles
-%text-style {
-  font-family: #{$font-stack};
-  color: var(--primary-color);
-  text-align: center;
-}
-
-// Placeholder for common container styles
-%container-style {
-  max-width: 1200px;
-  margin: auto;
-  padding: #{$spacing-unit};
-}
-
-// Loop to generate text color classes dynamically using interpolation
-@each $color in (red, blue, green, yellow) {
-  .text-#{$color} {
-    color: #{$color};
+// Placeholder for card style (used with @extend)
+// scss/utilities/_helpers.scss
+%card-style {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
   }
-}
+  
+  // Example mixin for clearfix (optional)
+  @mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  

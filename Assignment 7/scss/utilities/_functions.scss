@@ -1,20 +1,18 @@
+@use 'sass:math';
 
-// Function to darken a color
+@function rem($px) {
+  @return math.div($px, 16) * 1rem;
+}
+
 @function darken-color($color, $amount) {
-    @return darken($color, $amount);
+  @return darken($color, $amount);
+}
+
+@function contrast-color($color) {
+  @if (lightness($color) > 50) {
+    @return black;
+  } @else {
+    @return white;
   }
-  
-  // Function to calculate rem values
-  @function rem($px) {
-    @return #{$px / 16}rem;
-  }
-  
-  // Function to determine contrast color
-  @function contrast-color($color) {
-    @if (lightness($color) > 50) {
-      @return black;
-    } @else {
-      @return white;
-    }
-  }
-  
+}
+
