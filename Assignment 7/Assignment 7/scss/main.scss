@@ -1,0 +1,20 @@
+// scss/main.scss
+// scss/main.scss
+@use 'utilities/variables';
+@use 'utilities/mixins';
+@use 'utilities/functions';
+@use 'utilities/base'; // This will now work with proper variable access
+@use 'layout/grid';
+@use 'layout/flex';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/navigation'; // NEW
+
+// Add any additional global styles here
+
+// You can add global styles below if needed:
+body {
+  font-family: variables.$font-stack;
+}

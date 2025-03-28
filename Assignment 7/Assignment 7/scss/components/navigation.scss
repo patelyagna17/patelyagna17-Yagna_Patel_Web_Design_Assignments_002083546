@@ -1,0 +1,28 @@
+// scss/components/_navigation.scss
+@use '../utilities/variables' as vars; // Import variables with namespace
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    color: vars.$text-color; // Use the namespaced variable
+    background-color: vars.$secondary-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: vars.$dark-brown;
+    }
+  }
+}

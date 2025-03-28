@@ -1,0 +1,22 @@
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+nav ul li {
+  display: inline;
+}
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #D2691E;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+nav ul a:hover {
+  background-color: #a0522d;
+}/*# sourceMappingURL=navigation.css.map */

@@ -1,0 +1,14 @@
+body {
+  font-family: "Arial, sans-serif";
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=base.css.map */

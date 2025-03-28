@@ -1,0 +1,26 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: #d7ccc8;
+  padding: 40px;
+
+  img {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: #efebe9;
+  padding: 40px;
+}

@@ -1,0 +1,16 @@
+// scss/utilities/_base.scss
+@use './variables' as vars; // Import variables with namespace
+
+body {
+  font-family: vars.$font-stack; // Use namespaced variable
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
